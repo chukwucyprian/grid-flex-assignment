@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+   }
+  body {
+      background-color: hsl(247, 90%, 4%);
+    place-items: center;
+    display: flex;
+    min-height: 100vh;
+    
+  }
+  main{
+    display:grid;
+    grid-template-areas:
+      'a a b'
+      'c d d'
+      'c e e';
+    gap: 20px;
+    width: 50%;
+    margin: auto;
+    
+  }
+  main div{
+    padding: 2em;
+    border: 2px;
+    height: 50px;
+   
+  }
+  
+  .item-a {
+    background-color: hsl(0, 100%, 55%);
+    grid-area: a;
+    height: 90px;
+    
+   }
+  .item-b {
+    background-color: hsl(35, 94%, 49%);
+    grid-area: b;
+    height: 90px;
+    }
+  .item-c {
+    background-color:hsl(127, 99%, 30%);
+    grid-area: c;
+    height: 180px;
+    
+  }
+  .item-d {
+    background-color:hsl(179, 92%, 50%);
+    grid-area: d;
+    
+  }
+  .item-e {
+    background-color:hsl(179, 92%, 49%);
+    grid-area: e;
+    
+  }
+  
